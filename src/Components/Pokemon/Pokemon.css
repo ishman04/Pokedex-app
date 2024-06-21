@@ -1,14 +1,15 @@
-.pokeall{
-    width: 900px;
+.poke{
+    flex-basis: 25%;
+    width: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.poke{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
-    padding: 50px;
+.poke-img{
+    height: 150px;
+    max-height: 100%;
+    
 }
 .poke:hover{
     background-color: darkgoldenrod;

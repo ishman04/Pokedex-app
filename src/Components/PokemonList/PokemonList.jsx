@@ -23,7 +23,7 @@ function PokemonList() {
         const res = pokemonData.map((poke) => {
             const pokedata = poke.data;
             return {
-                key: pokedata.id,
+                id: pokedata.id,
                 name: pokedata.name,
                 image: (pokedata.sprites.other) ? pokedata.sprites.other.dream_world.front_default : pokedata.sprites.front_shiny,
                 types: pokedata.types
@@ -48,15 +48,18 @@ function PokemonList() {
                 <button id="next" disabled={nextpage==null} onClick={()=>setPokeUrl(nextpage)}>Next</button>
             </div>
             <h1>Pokemon List</h1>
-            {loading ? "Loading..." :
+            <div id="poke-list">
+                {loading ? "Loading..." :
                 (filteredPokemonList.length === 0 ? (
                     <p>No pokemon found</p>
                 ) : (
                     filteredPokemonList.map((p) => (
-                        <Pokemon key={p.key} name={p.name} image={p.image} />
+                        <Pokemon key={p.key} name={p.name} image={p.image} id={p.id}/>
                     ))
                 ))
             }
+            </div>
+            
             
         </div>
     );

@@ -1,10 +1,12 @@
+
 .pokemon-list-wrapper{
     align-self: center;
     /* margin-top: 50px; */
     padding: 10px;
-    width: 900px;
+    width: 1500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 h1{
     text-align: center;
@@ -29,4 +31,9 @@ h1{
 }
 #next{
     margin-left: 10px;
+}
+#poke-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
