@@ -1,0 +1,13 @@
+.pokemon-list-wrapper{
+    align-self: center;
+    /* margin-top: 50px; */
+    padding: 10px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:50px
+}
