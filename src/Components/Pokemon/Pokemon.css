@@ -10,3 +10,9 @@
     border-bottom: 2px solid black;
     padding: 50px;
 }
+.poke:hover{
+    background-color: darkgoldenrod;
+}
+#name{
+    letter-spacing: 0.5rem;
+}

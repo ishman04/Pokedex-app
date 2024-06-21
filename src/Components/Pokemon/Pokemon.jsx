@@ -3,10 +3,9 @@ function Pokemon({name, image,key}){
     return(
         <div className="allpoke">
             <div className='poke'>
-                <h2>Name : {name}</h2>
+                <h2 id='name'>Name : {name}</h2>
                 <div><img src={image}/></div>
             </div>
-            
             
         </div>
     )
