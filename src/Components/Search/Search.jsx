@@ -1,12 +1,9 @@
 import './Search.css';
-import { useState } from 'react';
 
-function Search({ setInput }) {
-
+function Search({ set, func }) {
     const handleInputChange = (e) => {
         const inputValue = e.target.value.toLowerCase();
-        // setSearchValue(inputValue);
-        setInput(inputValue);
+        set(inputValue);
     };
 
     return (
